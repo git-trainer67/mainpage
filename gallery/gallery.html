@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" text-align="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStyleChanger</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!--<div id="links">-->
+        <ul>   
+            <li><a href="../main.html">    خانه   </a></li>
+            <li><a href="../Local/contactUs.html">   تماس با ما    </a></li>
+            <li><a href="./gallery.html">    گالری  </a></li>
+            <li><a href="../Local/aboutUs.html">   درباره ما   </a></li>
+            <li><a href="./signUp.html">    ثبت نام   </a></li>
+        </ul>
+    
+        <h1 style="color:rgb(183, 219, 20);text-align:center;">گالری تصاویر و ویدیوها</h1>
+        <h1><p>We <em>cannot</em> live like this.</p></h1>
+        <h2><p>Change your <em>Life Style</em> here with us</p></h2>
+    
+        </div>
+    <hr>
+    
+    
+    <!--<div id="pretext">
+        <p style="color: aliceblue;">بر روی این متن شیوه نامه های آبشاری اعمال میشود</p>
+
+
+
+    </div>-->
+
+    
+    
+
+    <div class="content">
+
+        <button id="myBtn" onclick="myFunction()">Mute</button>
+    </div>
+
+    <video preload="auto" autoplay muted loop id="myVideo" width="50%" controls>
+        <source src="amire-bi-gagzand-144p.mp4" type="video/mp4">
+        Your browser does not support HTML5 vide.
+    </video>
+    <!--<style>
+        video{
+        position: fixed;
+        text-align:center;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    </style>-->
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            
+            
+            btn.innerHTML = video.muted ? "Mute":'Unmute';
+            
+            video.muted = !video.muted;
+        }
+    </script>
+
+    
+
+    <!--<iframe src="./1.mp4" type="video/mp4" allow="autoplay" id="video" style="display:none;"></iframe>
+    <video autoplay>
+        <source src="./1.mp4" type="video/mp4">
+    </video>-->
+
+</body>
+</html>

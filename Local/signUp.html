@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStyleChanger</title>
+    <link rel="stylesheet" href="../style.css">
+
+<meta charset="utf-8">
+<title>ثبت نام کاربران</title>
+	
+<script>
+	
+function sPass(){
+	var x = document.getElementById('pass');
+	if(x.type=="password")
+		x.type = "text";
+	else
+		x.type = "password";
+}	
+	
+</script>	
+	
+</head>
+
+	<body>
+		<ul>   
+			<li><a href="../main.html">    خانه   </a></li>
+			<li><a href="contactUs.html">   تماس با ما    </a></li>
+			<li><a href="../gallery/gallery.html">    گالری  </a></li>
+			<li><a href="aboutUs.html">   درباره ما   </a></li>
+			<li><a href="./signUp.html">    ثبت نام   </a></li>
+		</ul>
+		<p style="font-size: 30px; color: blue;">فرم ثبت نام</p>
+		<form action="" method="get" autocomplete="off">
+		<table>
+			<tr>
+				<td>
+				<input type="email" name="uName" placeholder="نام کاربری(ایمیل)" class="lAlign">	
+				</td>	
+			</tr>
+			<tr>
+				<td>
+				<input type="text" name="name" placeholder="نام">	
+				</td>	
+			</tr>
+			<tr>
+				<td>
+				<input type="text" name="lName" placeholder="نام خانوادگی">	
+				</td>	
+			</tr>
+			<tr>
+				<td>
+				<input type="text" name="cMelli" placeholder="کد ملی" class="lAlign">	
+				</td>	
+			</tr>
+			<tr>
+				<td>
+				<input type="text" name="mobile" placeholder="شماره همراه" class="lAlign">	
+				</td>	
+			</tr>
+			<tr>
+				<td>
+				<label>جنسیت</label>
+				<div>
+				<span>
+				مرد
+				<input type="radio" name="jensiat" value="men" class="jensiat">	
+				</span>
+				<span>
+				زن
+				<input type="radio" name="jensiat" value="women" class="jensiat">	
+				</span>	
+				</div>	
+				</td>	
+			</tr>
+			<tr>
+				<td>	
+				<input type="password" name="pass" placeholder="رمز عبور" class="lAlign" id="pass">
+				<img src="./eye.png" alt="showPass" title="نمایش پسورد" id="showPass" onClick="sPass()">	
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="submit" value="ثبت نام" class="btnSapt">	
+				</td>	
+			</tr>	
+		</table>	
+		</form>	
+	</body>
+</html>
